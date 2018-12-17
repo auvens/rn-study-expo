@@ -5,11 +5,13 @@ import {
 } from 'react-navigation'
 import CompIndex from '../pages/Component/Index/Index'
 import APIIndex from '../pages/API/Index/Index'
+import PluginsIndex from '../pages/Plugins/Index/Index'
 
 export default createBottomTabNavigator(
   {
     Component: CompIndex,
-    API: APIIndex
+    API: APIIndex,
+    Plugins: PluginsIndex
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
@@ -20,6 +22,8 @@ export default createBottomTabNavigator(
           source = focused ? require('../images/icon_component_HL.png') : require('../images/icon_component.png')
         } else if (routeName === 'API') {
           source = focused ? require('../images/icon_API_HL.png') : require('../images/icon_API.png')
+        } else if (routeName === 'Plugins') {
+          source = focused ? require('../images/icon_plugin_HL.png') : require('../images/icon_plugin.png')
         }
 
         return (

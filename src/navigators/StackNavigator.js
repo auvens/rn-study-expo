@@ -1,6 +1,8 @@
 import { createStackNavigator } from 'react-navigation'
 import TabNavigator from './TabNavigator'
 import CompView from '../pages/Component/View/View'
+import RNSyntaxHighlighter from '../pages/Plugins/react-native-syntax-highlighter/index'
+import RNTable from '../pages/Plugins/react-native-table-component/app'
 
 TabNavigator.navigationOptions = ({ navigation }) => {
   const { routeName } = navigation.state.routes[navigation.state.index]
@@ -10,6 +12,8 @@ TabNavigator.navigationOptions = ({ navigation }) => {
     headerTitle = '组件'
   } else if (routeName === 'API') {
     headerTitle = 'API'
+  } else if (routeName === 'Plugins') {
+    headerTitle = '插件'
   }
 
   return {
@@ -19,5 +23,7 @@ TabNavigator.navigationOptions = ({ navigation }) => {
 
 export default createStackNavigator({
   Tab: TabNavigator,
-  View: CompView
+  View: CompView,
+  RNSyntaxHighlighter,
+  RNTable
 })
