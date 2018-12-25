@@ -21,6 +21,10 @@ TabNavigator.navigationOptions = ({ navigation }) => {
   }
 }
 
+RNTable.navigationOptions = {
+  header: null
+}
+
 export default createStackNavigator({
   Tab: TabNavigator,
   View: CompView,

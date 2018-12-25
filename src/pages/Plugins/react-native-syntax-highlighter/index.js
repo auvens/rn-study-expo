@@ -38,7 +38,7 @@ const buttonStyle = color => ({
   backgroundColor: color
 });
 
-const copyStyle = hovered => ({ 
+const copyStyle = hovered => ({
   marginRight: 12,
   paddingLeft: 8,
   paddingRight: 8,
@@ -79,62 +79,62 @@ export default class CodeWindow extends React.Component {
   }
 
   render() {
-    const { 
-      width = 500, 
-      title ='react-code-window', 
+    const {
+      width = 500,
+      title ='react-code-window',
       children,
       CopyComponent
     } = this.props;
     const yellowButtonChildren = (
-      this.state.showMinus && this.props.allowMinimizeMaximize 
+      this.state.showMinus && this.props.allowMinimizeMaximize
       ?
       <span style={{
-        position: 
-        'relative', 
-        bottom: '5px', 
+        position:
+        'relative',
+        bottom: '5px',
         fontWeight: 600,
-        fontSize: 14, 
+        fontSize: 14,
         color: 'rgba(0,0,0,0.5)',
         cursor: 'default',
         highlight: 'none'
       }}>&minus;</span>
       :
-      null 
+      null
     );
     const greenButtonChildren = (
       this.state.showMinus && this.props.allowMinimizeMaximize
       ?
       <span style={{
-        position: 
-        'relative', 
-        bottom: '5px', 
+        position:
+        'relative',
+        bottom: '5px',
         fontWeight: 600,
-        fontSize: 12, 
+        fontSize: 12,
         color: 'rgba(0,0,0,0.5)',
         cursor: 'default',
         highlight: 'none'
       }}>&#43;</span>
       :
-      null 
+      null
     );
     const syntax = (
-      !this.state.minimized 
+      !this.state.minimized
       ?
-      <SyntaxHighlighter 
-        style={atomOneDark} 
-        customStyle={{ 
-          margin: 0, 
+      <SyntaxHighlighter
+        style={atomOneDark}
+        customStyle={{
+          margin: 0,
         }}
       >
         {children}
       </SyntaxHighlighter>
       :
       null
-    ); 
+    );
     const copyButton = (
-      this.props.showCopy 
-      ? 
-      <CopyComponent 
+      this.props.showCopy
+      ?
+      <CopyComponent
         style={
           typeof this.props.copyComponentStyle === 'function'
           ?
@@ -147,27 +147,27 @@ export default class CodeWindow extends React.Component {
         onClick={() => copy(children)}
       >
         {this.props.copyChildren}
-      </CopyComponent> 
-      : 
+      </CopyComponent>
+      :
       <span />
     );
     return (
       <div style={{position: 'relative', width: '100%'}}>
         <div style={headerStyle(width)}>
-          <span 
-            style={buttonsContainer} 
+          <span
+            style={buttonsContainer}
             onMouseEnter={() => this.setState({ showMinus: true })}
             onMouseLeave={() => this.setState({ showMinus: false })}
           >
             <div style={redButton} />
-            <div 
+            <div
               style={yellowButton}
               onClick={() => this.props.allowMinimizeMaximize && this.onMinimize()}
             >
               {yellowButtonChildren}
             </div>
-            <div 
-              style={greenButton} 
+            <div
+              style={greenButton}
               onClick={() => this.props.allowMinimizeMaximize && this.onMaximize()}
             >
               {greenButtonChildren}
@@ -178,13 +178,13 @@ export default class CodeWindow extends React.Component {
         </div>
         {syntax}
       </div>
-    );  
+    );
   }
 }
 
-CodeWindow.defaultProps = { 
-  allowMinimizeMaximize: true, 
-  showCopy: true, 
+CodeWindow.defaultProps = {
+  allowMinimizeMaximize: true,
+  showCopy: true,
   CopyComponent: 'div',
   copyComponentStyle: copyStyle,
   copyChildren: 'Copy'
@@ -192,6 +192,10 @@ CodeWindow.defaultProps = {
 `
 
 export default class App extends React.Component {
+  static navigationOptions = {
+    title: 'react-native-syntax-highlighter'
+  }
+
   constructor() {
     super()
     this.state = { code }
