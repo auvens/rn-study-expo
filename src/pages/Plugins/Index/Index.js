@@ -1,5 +1,7 @@
 import React from 'react'
 import { Text, View, Button } from 'react-native'
+import CompBlock from '../../../Components/CompBlock'
+import * as Theme from '../../../theme'
 
 export default class PluginsIndex extends React.Component {
   static navigationOptions = {
@@ -7,11 +9,23 @@ export default class PluginsIndex extends React.Component {
   }
 
   render() {
+    const list = [
+      {
+        label: 'react-native-syntax-highlighter',
+        android: true,
+        ios: true,
+        route: 'RNSyntaxHighlighter'
+      },
+      {
+        label: 'react-native-table-component',
+        android: true,
+        ios: true,
+        route: 'RNTable'
+      }
+    ]
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>react native 相关插件</Text>
-        <Button title="react-native-syntax-highlighter" onPress={() => this.props.navigation.navigate('RNSyntaxHighlighter')}/>
-        <Button title="react-native-table-component" onPress={() => this.props.navigation.navigate('RNTable')}/>
+      <View style={Theme.styles.page}>
+        <CompBlock blockTitle="插件" list={list} />
       </View>
     )
   }

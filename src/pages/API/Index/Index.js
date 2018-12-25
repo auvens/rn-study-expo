@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
+import * as Theme from '../../../theme'
 
 export default class APIIndex extends React.Component {
   static navigationOptions = {
@@ -8,7 +9,7 @@ export default class APIIndex extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={[Theme.styles.page, { justifyContent: 'center', alignItems: 'center' }]}>
         <Text>react native 相关 API</Text>
       </View>
     )
