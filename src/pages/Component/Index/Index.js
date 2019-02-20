@@ -1,8 +1,10 @@
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, ScrollView } from 'react-native'
 import { Button, WhiteSpace, WingBlank, List } from 'antd-mobile-rn'
 import CompBlock from '../../../Components/CompBlock'
 import * as Theme from '../../../theme'
+import GroupBlock from '../../../Components/GroupBlock'
+import groupList from './groupList'
 
 export default class CompIndex extends React.Component {
   static navigationOptions = {
@@ -11,10 +13,13 @@ export default class CompIndex extends React.Component {
 
   render() {
     return (
-      <View style={Theme.styles.page}>
-        <CompBlock blockTitle="视图容器" list={[{ label: 'View 组件', android: true, ios: true, route: 'View' }]} />
+      <ScrollView style={Theme.styles.page}>
         <WhiteSpace size="lg" />
-      </View>
+        {groupList.map((item, i) => (
+          <GroupBlock key={i} group={item} />
+        ))}
+        <WhiteSpace size="lg" />
+      </ScrollView>
     )
   }
 }
