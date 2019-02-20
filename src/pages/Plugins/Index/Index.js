@@ -1,7 +1,9 @@
 import React from 'react'
-import { Text, View, Button } from 'react-native'
-import CompBlock from '../../../Components/CompBlock'
+import { ScrollView } from 'react-native'
+import { WhiteSpace } from 'antd-mobile-rn'
 import * as Theme from '../../../theme'
+import GroupBlock from '../../../Components/GroupBlock'
+import pluginList from './pluginList'
 
 export default class PluginsIndex extends React.Component {
   static navigationOptions = {
@@ -9,24 +11,14 @@ export default class PluginsIndex extends React.Component {
   }
 
   render() {
-    const list = [
-      {
-        label: 'react-native-syntax-highlighter',
-        android: true,
-        ios: true,
-        route: 'RNSyntaxHighlighter'
-      },
-      {
-        label: 'react-native-table-component',
-        android: true,
-        ios: true,
-        route: 'RNTable'
-      }
-    ]
     return (
-      <View style={Theme.styles.page}>
-        <CompBlock blockTitle="插件" list={list} />
-      </View>
+      <ScrollView style={Theme.styles.page}>
+        <WhiteSpace size="lg" />
+        {pluginList.map((item, i) => (
+          <GroupBlock key={i} group={item} />
+        ))}
+        <WhiteSpace size="lg" />
+      </ScrollView>
     )
   }
 }
