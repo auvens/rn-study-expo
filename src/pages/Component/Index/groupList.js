@@ -3,7 +3,7 @@ export default [
     title: '基础组件',
     list: [
       { label: 'View', android: true, ios: true, route: 'View' },
-      { label: 'Text', android: true, ios: true },
+      { label: 'Text', android: true, ios: true, route: 'Text' },
       { label: 'ScrollView', android: true, ios: true },
       { label: 'Image', android: true, ios: true },
       { label: 'SafeAreaView', android: true, ios: true }
