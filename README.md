@@ -2,6 +2,14 @@
 
 使用 expo 来学习 React native
 
+## 预览
+
+下载 [expo](https://expo.io/tools#client) 客户端并扫码预览
+
+<div align=center>
+  <img width="300" src="./assets/expo-qrcode.png" />
+</div>
+
 ## 运行
 
 ``` bash
