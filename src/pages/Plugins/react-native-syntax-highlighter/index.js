@@ -196,9 +196,18 @@ export default class App extends React.Component {
     title: 'react-native-syntax-highlighter'
   }
 
-  constructor() {
-    super()
-    this.state = { code }
+  constructor(props) {
+    super(props)
+    this.state = { code: '' }
+    this.didBlurSubscription = this.props.navigation.addListener(
+      'didFocus',
+      payload => {
+        console.log('didFocus', payload)
+        this.setState({
+          code
+        })
+      }
+    )
   }
   render() {
     return (
