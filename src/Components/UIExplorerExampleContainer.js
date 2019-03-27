@@ -7,7 +7,7 @@ import UIExplorerPage from './UIExplorerPage'
 class UIExplorerExampleContainer extends React.Component {
   renderExample(example, i) {
     // Filter platform-specific examples
-    const { title, description, platform } = example
+    let { title, description, platform } = example
     if (platform) {
       if (Platform.OS !== platform) {
         return null

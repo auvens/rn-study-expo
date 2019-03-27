@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   spacer: {
-    height: 270
+    height: 20
   },
   wrapper: {
     flex: 1,

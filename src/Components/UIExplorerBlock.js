@@ -50,14 +50,15 @@ const styles = StyleSheet.create({
     borderBottomColor: '#d6d7da',
     backgroundColor: '#f6f7f8',
     paddingHorizontal: 10,
-    paddingVertical: 5
+    paddingVertical: 10
   },
   titleText: {
     fontSize: 14,
     fontWeight: '500'
   },
   descriptionText: {
-    fontSize: 14
+    fontSize: 14,
+    marginTop: 10
   },
   disclosure: {
     position: 'absolute',

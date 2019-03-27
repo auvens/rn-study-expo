@@ -10,8 +10,6 @@ export default class AuthLoading extends React.Component {
   // Fetch the token from storage then navigate to our appropriate place
   _bootstrapAsync = async () => {
     const firstUse = await AsyncStorage.getItem('firstUse')
-
-    console.log('执行这里')
     this.props.navigation.navigate('App')
     return
 

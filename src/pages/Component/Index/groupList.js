@@ -5,7 +5,7 @@ export default [
       { label: 'View', android: true, ios: true, route: 'View' },
       { label: 'Text', android: true, ios: true, route: 'Text' },
       { label: 'ScrollView', android: true, ios: true, route: 'ScrollView' },
-      { label: 'Image', android: true, ios: true },
+      { label: 'Image', android: true, ios: true, route: 'Image' },
       { label: 'SafeAreaView', android: true, ios: true }
     ]
   },

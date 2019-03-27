@@ -1,5 +1,7 @@
 # rn-study-expo
 
+> 示例参考：[UIExplorer](https://github.com/facebook/react-native/tree/0.44-stable/Examples/UIExplorer)
+
 使用 expo 来学习 React native
 
 ## 预览

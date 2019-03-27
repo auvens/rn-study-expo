@@ -10,6 +10,7 @@
     "antd-mobile-rn": "^2.3.3",
     "axios": "^0.18.0",
     "expo": "^32.0.0",
+    "i18n-js": "^3.2.1",
     "prop-types": "^15.7.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
