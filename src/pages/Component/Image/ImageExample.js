@@ -208,12 +208,12 @@ class MultipleSourcesExample extends React.Component {
             style={{ flex: 1 }}
             source={[
               {
-                uri: 'http://lorempixel.com/100/100/',
+                uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/100x100.png',
                 width: 100,
                 height: 100
               },
               {
-                uri: 'http://lorempixel.com/200/200/',
+                uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/200x200.png',
                 width: 200,
                 height: 200
               }
@@ -257,7 +257,7 @@ exports.examples = [
     render() {
       return (
         <Image
-          source={{ uri: 'http://lorempixel.com/200/200/' }}
+          source={{ uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/200x200.png' }}
           style={styles.base}
         />
       )
@@ -533,11 +533,11 @@ exports.examples = [
           <Text style={styles.sectionText}>{ i18n.t('ep14.content1') }</Text>
           <View style={styles.horizontal}>
             <Image
-              source={{ uri: 'https://reactnative.cn/img/header_logo.png' }}
+              source={{ uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/200x200.png' }}
               style={[styles.base, { borderRadius: 5, tintColor: '#5ac8fa' }]}
             />
             <Image
-              source={{ uri: 'https://reactnative.cn/img/header_logo.png' }}
+              source={{ uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/200x200.png' }}
               style={[
                 styles.base,
                 styles.leftMargin,
@@ -545,7 +545,7 @@ exports.examples = [
               ]}
             />
             <Image
-              source={{ uri: 'https://reactnative.cn/img/header_logo.png' }}
+              source={{ uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/200x200.png' }}
               style={[
                 styles.base,
                 styles.leftMargin,
@@ -553,7 +553,7 @@ exports.examples = [
               ]}
             />
             <Image
-              source={{ uri: 'https://reactnative.cn/img/header_logo.png' }}
+              source={{ uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/200x200.png' }}
               style={[
                 styles.base,
                 styles.leftMargin,
@@ -744,9 +744,9 @@ exports.examples = [
   }
 ]
 
-const fullImage = { uri: 'http://lorempixel.com/600/600/' }
+const fullImage = { uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/600x600.png' }
 const smallImage = {
-  uri: 'http://lorempixel.com/50/50/'
+  uri: 'https://raw.githubusercontent.com/auven/rn-study-expo/master/src/images/100x100.png'
 }
 
 const styles = StyleSheet.create({
