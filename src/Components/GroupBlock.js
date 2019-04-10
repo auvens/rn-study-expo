@@ -1,31 +1,52 @@
 import React from 'react'
-import { Text, View, StyleSheet, Image, TouchableHighlight } from 'react-native'
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  TouchableHighlight,
+  Platform
+} from 'react-native'
 import { withNavigation } from 'react-navigation'
 
 class GroupBlock extends React.Component {
   render() {
     const { group } = this.props
+    let listLength = 0
+    const list = group.list.map((item, index) => {
+      if (!item.platform || Platform.OS === item.platform) {
+        listLength++
+        return (
+          <TouchableHighlight
+            key={index}
+            underlayColor={'#f2f2f2'}
+            onPress={() =>
+              item.route ? this.props.navigation.navigate(item.route) : null
+            }
+          >
+            <View style={[styles.linePd, styles.comLink]}>
+              <Text style={styles.comLinkText}>{item.label}</Text>
+              <Image
+                style={styles.comLinkArrow}
+                source={require('../images/icon-right.png')}
+              />
+            </View>
+          </TouchableHighlight>
+        )
+      } else {
+        return null
+      }
+    })
+    if (!listLength) {
+      return null
+    }
     return (
       <View style={styles.wrap}>
         <View style={styles.mainBox}>
           <View style={[styles.linePd]}>
             <Text style={styles.blockTitle}>{group.title}</Text>
           </View>
-          {group.list.map((item, index) => (
-            <TouchableHighlight
-              key={index}
-              underlayColor={'#f2f2f2'}
-              onPress={() => item.route ? this.props.navigation.navigate(item.route) : null}
-            >
-              <View style={[styles.linePd, styles.comLink]}>
-                <Text style={styles.comLinkText}>{item.label}</Text>
-                <Image
-                  style={styles.comLinkArrow}
-                  source={require('../images/icon-right.png')}
-                />
-              </View>
-            </TouchableHighlight>
-          ))}
+          {list}
         </View>
       </View>
     )

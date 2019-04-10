@@ -4,6 +4,7 @@ import CompView from '../pages/Component/View/View'
 import CompText from '../pages/Component/Text/Text'
 import CompScrollView from '../pages/Component/ScrollView/ScrollView'
 import CompImage from '../pages/Component/Image/Image'
+import CompActivityIndicator from '../pages/Component/ActivityIndicator/ActivityIndicator'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -38,6 +39,7 @@ export default createStackNavigator({
   Text: CompText,
   ScrollView: CompScrollView,
   Image: CompImage,
+  ActivityIndicator: CompActivityIndicator,
 
   DocViewer: DocViewer,
   CodeViewer,
