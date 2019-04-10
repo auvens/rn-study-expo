@@ -8,8 +8,8 @@ export default class CompActivityIndicator extends React.Component {
     title: 'ActivityIndicator',
     headerRight: (
       <HeaderRight
-        docUrl="https://reactnative.cn/docs/image/"
-        codeUrl="src/pages/Component/Image/ImageExample.js"
+        docUrl="https://reactnative.cn/docs/activityindicator/"
+        codeUrl="src/pages/Component/ActivityIndicator/ActivityIndicatorExample.js"
       />
     )
   }

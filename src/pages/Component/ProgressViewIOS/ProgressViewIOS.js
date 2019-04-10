@@ -8,8 +8,8 @@ export default class CompProgressViewIOS extends React.Component {
     title: 'ProgressViewIOS',
     headerRight: (
       <HeaderRight
-        docUrl="https://reactnative.cn/docs/image/"
-        codeUrl="src/pages/Component/Image/ImageExample.js"
+        docUrl="https://reactnative.cn/docs/progressviewios/"
+        codeUrl="src/pages/Component/ProgressViewIOS/ProgressViewIOSExample.js"
       />
     )
   }

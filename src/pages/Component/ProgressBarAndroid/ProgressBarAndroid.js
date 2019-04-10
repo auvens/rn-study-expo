@@ -8,8 +8,8 @@ export default class CompProgressBarAndroid extends React.Component {
     title: 'ProgressBarAndroid',
     headerRight: (
       <HeaderRight
-        docUrl="https://reactnative.cn/docs/image/"
-        codeUrl="src/pages/Component/Image/ImageExample.js"
+        docUrl="https://reactnative.cn/docs/progressbarandroid/"
+        codeUrl="src/pages/Component/ProgressBarAndroid/ProgressBarAndroidExample.js"
       />
     )
   }
