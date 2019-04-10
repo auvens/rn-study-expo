@@ -6,6 +6,7 @@ import CompScrollView from '../pages/Component/ScrollView/ScrollView'
 import CompImage from '../pages/Component/Image/Image'
 import CompActivityIndicator from '../pages/Component/ActivityIndicator/ActivityIndicator'
 import CompProgressBarAndroid from '../pages/Component/ProgressBarAndroid/ProgressBarAndroid'
+import CompProgressViewIOS from '../pages/Component/ProgressViewIOS/ProgressViewIOS'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -42,6 +43,7 @@ export default createStackNavigator({
   Image: CompImage,
   ActivityIndicator: CompActivityIndicator,
   ProgressBarAndroid: CompProgressBarAndroid,
+  ProgressViewIOS: CompProgressViewIOS,
 
   DocViewer: DocViewer,
   CodeViewer,

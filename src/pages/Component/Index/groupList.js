@@ -23,7 +23,7 @@ export default [
     list: [
       { label: 'ActivityIndicator', route: 'ActivityIndicator' },
       { label: 'ProgressBarAndroid', platform: 'android', route: 'ProgressBarAndroid' },
-      { label: 'ProgressViewIOS', platform: 'ios' },
+      { label: 'ProgressViewIOS', platform: 'ios', route: 'ProgressViewIOS' },
       { label: 'RefreshControl' },
       { label: 'Touchable*' }
     ]
