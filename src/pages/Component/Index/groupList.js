@@ -22,7 +22,7 @@ export default [
     title: '操作反馈',
     list: [
       { label: 'ActivityIndicator', route: 'ActivityIndicator' },
-      { label: 'ProgressBarAndroid', platform: 'android' },
+      { label: 'ProgressBarAndroid', platform: 'android', route: 'ProgressBarAndroid' },
       { label: 'ProgressViewIOS', platform: 'ios' },
       { label: 'RefreshControl' },
       { label: 'Touchable*' }
