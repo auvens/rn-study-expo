@@ -40,7 +40,7 @@ export default [
     title: '表单组件',
     list: [
       { label: 'Button', route: 'Button' },
-      { label: 'Picker' },
+      { label: 'Picker', route: 'Picker' },
       { label: 'PickerIOS', platform: 'ios' },
       { label: 'DatePickerIOS', platform: 'ios', route: 'DatePickerIOS' },
       { label: 'Slider', route: 'Slider' },
