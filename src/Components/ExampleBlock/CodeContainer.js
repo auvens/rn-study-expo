@@ -4,7 +4,8 @@ import {
   Text,
   StyleSheet,
   ScrollView,
-  ActivityIndicator
+  ActivityIndicator,
+  Platform
 } from 'react-native'
 import SyntaxHighlighter from 'react-native-syntax-highlighter' // 2.0.0
 import fetchCodeRaw from '../../utils/fetchCodeRaw'
@@ -75,7 +76,7 @@ export default class CodeContainer extends React.Component {
             </Text>
           ))}
         </ScrollView>
-        <View style={[styles.codeBody]}>
+        <View style={[styles.codeBody, Platform.OS === 'ios' ? styles.codeBodyFixHeight : null]}>
           {!this.state.loading ? (
             <SyntaxHighlighter
               customStyle={{ padding: 5, margin: 0 }}
@@ -108,6 +109,9 @@ const styles = {
   },
   codeBody: {
     minHeight: 300
+  },
+  codeBodyFixHeight: {
+    height: 300
   },
   codeLoading: {
     flex: 1,
