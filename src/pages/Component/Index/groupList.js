@@ -13,7 +13,7 @@ export default [
     title: '视图容器',
     list: [
       { label: 'DrawerLayoutAndroid', platform: 'android' },
-      { label: 'Modal' },
+      { label: 'Modal', route: 'Modal' },
       { label: 'ViewPagerAndroid', platform: 'android' },
       { label: 'WebView' }
     ]

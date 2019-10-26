@@ -10,6 +10,7 @@ import CompProgressBarAndroid from '../pages/Component/ProgressBarAndroid/Progre
 import CompProgressViewIOS from '../pages/Component/ProgressViewIOS/ProgressViewIOS'
 import CompButton from '../pages/Component/Button'
 import CompDatePickerIOS from '../pages/Component/DatePickerIOS'
+import CompModal from '../pages/Component/Modal'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -49,6 +50,7 @@ export default createStackNavigator({
   ProgressViewIOS: CompProgressViewIOS,
   Button: CompButton,
   DatePickerIOS: CompDatePickerIOS,
+  Modal: CompModal,
 
   DocViewer: DocViewer,
   CodeViewer,
