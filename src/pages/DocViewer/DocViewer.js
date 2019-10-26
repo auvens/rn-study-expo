@@ -1,12 +1,12 @@
 import React from 'react'
 import {
   View,
-  WebView,
   Image,
   TouchableWithoutFeedback,
   SafeAreaView,
   Text
 } from 'react-native'
+import { WebView } from 'react-native-webview'
 
 export default class DocViewer extends React.Component {
   static navigationOptions = {

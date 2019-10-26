@@ -1,6 +1,6 @@
 import { createStackNavigator } from 'react-navigation'
 import TabNavigator from './TabNavigator'
-import CompView from '../pages/Component/View/View'
+import CompView from '../pages/Component/View'
 import CompText from '../pages/Component/Text/Text'
 import CompScrollView from '../pages/Component/ScrollView/ScrollView'
 import CompImage from '../pages/Component/Image/Image'

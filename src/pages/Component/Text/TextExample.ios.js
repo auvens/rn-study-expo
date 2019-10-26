@@ -220,12 +220,12 @@ exports.examples = [
           <Text style={{ fontFamily: 'Helvetica', fontWeight: 'bold' }}>
             Helvetica bold
           </Text>
-          <Text style={{ fontFamily: Platform.isTVOS ? 'Courier' : 'Verdana' }}>
+          <Text style={{ fontFamily: 'Verdana' }}>
             Verdana
           </Text>
           <Text
             style={{
-              fontFamily: Platform.isTVOS ? 'Courier' : 'Verdana',
+              fontFamily: 'Verdana',
               fontWeight: 'bold'
             }}
           >
