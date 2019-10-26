@@ -42,7 +42,7 @@ export default [
       { label: 'Button', route: 'Button' },
       { label: 'Picker' },
       { label: 'PickerIOS', platform: 'ios' },
-      { label: 'DatePickerIOS', platform: 'ios' },
+      { label: 'DatePickerIOS', platform: 'ios', route: 'DatePickerIOS' },
       { label: 'Slider' },
       { label: 'Switch' },
       { label: 'TextInput' },
