@@ -12,6 +12,7 @@ import CompButton from '../pages/Component/Button'
 import CompDatePickerIOS from '../pages/Component/DatePickerIOS'
 import CompModal from '../pages/Component/Modal'
 import CompSwitch from '../pages/Component/Switch'
+import CompSlider from '../pages/Component/Slider'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -53,6 +54,7 @@ export default createStackNavigator({
   DatePickerIOS: CompDatePickerIOS,
   Modal: CompModal,
   Switch: CompSwitch,
+  Slider: CompSlider,
 
   DocViewer: DocViewer,
   CodeViewer,
