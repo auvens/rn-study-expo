@@ -11,6 +11,7 @@ import CompProgressViewIOS from '../pages/Component/ProgressViewIOS/ProgressView
 import CompButton from '../pages/Component/Button'
 import CompDatePickerIOS from '../pages/Component/DatePickerIOS'
 import CompModal from '../pages/Component/Modal'
+import CompSwitch from '../pages/Component/Switch'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -51,6 +52,7 @@ export default createStackNavigator({
   Button: CompButton,
   DatePickerIOS: CompDatePickerIOS,
   Modal: CompModal,
+  Switch: CompSwitch,
 
   DocViewer: DocViewer,
   CodeViewer,

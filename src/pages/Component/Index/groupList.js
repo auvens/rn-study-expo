@@ -44,7 +44,7 @@ export default [
       { label: 'PickerIOS', platform: 'ios' },
       { label: 'DatePickerIOS', platform: 'ios', route: 'DatePickerIOS' },
       { label: 'Slider' },
-      { label: 'Switch' },
+      { label: 'Switch', route: 'Switch' },
       { label: 'TextInput' },
     ]
   },
