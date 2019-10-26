@@ -1,5 +1,6 @@
 import { createStackNavigator } from 'react-navigation'
 import TabNavigator from './TabNavigator'
+
 import CompView from '../pages/Component/View'
 import CompText from '../pages/Component/Text'
 import CompScrollView from '../pages/Component/ScrollView/ScrollView'
@@ -7,6 +8,7 @@ import CompImage from '../pages/Component/Image/Image'
 import CompActivityIndicator from '../pages/Component/ActivityIndicator/ActivityIndicator'
 import CompProgressBarAndroid from '../pages/Component/ProgressBarAndroid/ProgressBarAndroid'
 import CompProgressViewIOS from '../pages/Component/ProgressViewIOS/ProgressViewIOS'
+import CompButton from '../pages/Component/Button'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -44,6 +46,7 @@ export default createStackNavigator({
   ActivityIndicator: CompActivityIndicator,
   ProgressBarAndroid: CompProgressBarAndroid,
   ProgressViewIOS: CompProgressViewIOS,
+  Button: CompButton,
 
   DocViewer: DocViewer,
   CodeViewer,
