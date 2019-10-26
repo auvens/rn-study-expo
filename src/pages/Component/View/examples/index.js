@@ -1,12 +1,12 @@
 import React from 'react'
-import code1 from './code1'
-import code2 from './code2'
-import code3 from './code3'
-import code4 from './code4'
-import code5 from './code5'
-import code6 from './code6'
-import code7 from './code7'
-import code8 from './code8'
-import code9 from './code9'
+import code01 from './code01'
+import code02 from './code02'
+import code03 from './code03'
+import code04 from './code04'
+import code05 from './code05'
+import code06 from './code06'
+import code07 from './code07'
+import code08 from './code08'
+import code09 from './code09'
 
-export default [code1, code2, code3, code4, code5, code6, code7, code8, code9]
+export default [code01, code02, code03, code04, code05, code06, code07, code08, code09]
