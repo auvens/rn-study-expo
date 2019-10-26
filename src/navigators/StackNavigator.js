@@ -14,6 +14,7 @@ import CompModal from '../pages/Component/Modal'
 import CompSwitch from '../pages/Component/Switch'
 import CompSlider from '../pages/Component/Slider'
 import CompPicker from '../pages/Component/Picker'
+import CompPickerIOS from '../pages/Component/PickerIOS'
 
 import DocViewer from '../pages/DocViewer/DocViewer'
 import CodeViewer from '../pages/CodeViewer/CodeViewer'
@@ -57,6 +58,7 @@ export default createStackNavigator({
   Switch: CompSwitch,
   Slider: CompSlider,
   Picker: CompPicker,
+  PickerIOS: CompPickerIOS,
 
   DocViewer: DocViewer,
   CodeViewer,

@@ -41,7 +41,7 @@ export default [
     list: [
       { label: 'Button', route: 'Button' },
       { label: 'Picker', route: 'Picker' },
-      { label: 'PickerIOS', platform: 'ios' },
+      { label: 'PickerIOS', platform: 'ios', route: 'PickerIOS' },
       { label: 'DatePickerIOS', platform: 'ios', route: 'DatePickerIOS' },
       { label: 'Slider', route: 'Slider' },
       { label: 'Switch', route: 'Switch' },
